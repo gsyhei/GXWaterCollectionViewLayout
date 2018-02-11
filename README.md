@@ -1,5 +1,5 @@
 # GXWaterCollectionViewLayout
---
+-
 一个好用的瀑布流布局，可以设置纵横方向和排列数等。
 
 Requirements
@@ -12,7 +12,6 @@ Usage in you Podfile:
 
 ```
 pod 'GXWaterCollectionViewLayout'
-
 ```
 
 可以设置纵横方向
