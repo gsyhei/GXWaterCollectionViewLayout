@@ -1,6 +1,6 @@
 # GXWaterCollectionViewLayout
 
-####一个好用的瀑布流布局，可以设置纵横方向和排列数等。
+一个好用的瀑布流布局，可以设置纵横方向和排列数等。
 
 ###Usage in you Podfile:
 
@@ -11,13 +11,13 @@ pod 'GXWaterCollectionViewLayout'
 
 ###可以设置纵横方向
 
-```objectivec
+```java
 @property (nonatomic, assign) UICollectionViewScrollDirection scrollDirection;  //滚动方向
 ```
 
 ###可以设置的其它参数
 
-```objectivec
+```java
 @property (nonatomic, assign) NSInteger    numberOfColumns;   //瀑布流横排数
 @property (nonatomic, assign) CGFloat      lineSpacing;       //纵向间距
 @property (nonatomic, assign) CGFloat      interitemSpacing;  //横向间距
@@ -28,7 +28,7 @@ pod 'GXWaterCollectionViewLayout'
 
 ###实例应用代码
 
-```objectivec
+```java
 // 初始化瀑布流布局
 self.waterLayout = [[GXWaterCollectionViewLayout alloc] init];
 self.waterLayout.numberOfColumns = 4;
@@ -56,3 +56,6 @@ self.waterCollectionView.dataSource = self;
 
 ![](/IMG_Horizontal.PNG '描述')
 
+###License
+--
+MIT
