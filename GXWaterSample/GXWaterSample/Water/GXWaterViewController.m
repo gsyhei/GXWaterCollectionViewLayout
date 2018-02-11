@@ -11,19 +11,16 @@
 #import "GXWaterCVCell.h"
 #import "GXHeaderCRView.h"
 #import "GXFooterCRView.h"
-#import "GXMediaBrowser.h"
-#import "GXMediaAnimationDelegate.h"
 
 static NSString* GXSectionHeaderID = @"GXSectionHeaderID";
 static NSString* GXSectionFooterID = @"GXSectionFooterID";
 static NSString* GXSectionCellID   = @"GXSectionCellID";
 
-@interface GXWaterViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,GXWaterCollectionViewLayoutDelegate,GXMediaBrowserDelegate>
+@interface GXWaterViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,GXWaterCollectionViewLayoutDelegate>
 @property (strong, nonatomic) UICollectionView *waterCollectionView;
 @property (strong, nonatomic) GXWaterCollectionViewLayout *waterLayout;
 @property (strong, nonatomic) NSMutableArray<NSMutableArray*> *imageArr;
 
-@property (nonatomic, strong) GXMediaAnimationDelegate *mediaAnimationDelegate;
 @end
 
 @implementation GXWaterViewController
@@ -48,7 +45,7 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
     }
     self.waterLayout.delegate = self;
     
-    CGFloat top = 44.0 + SCREEN_STATUSBAR_HEIGHT;
+    CGFloat top = 44.0 + [[UIApplication sharedApplication] statusBarFrame].size.height;
     CGRect frame = CGRectMake(0, top, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - top);
     self.waterCollectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:self.waterLayout];
     self.waterCollectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
@@ -70,8 +67,6 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
     
     UILongPressGestureRecognizer *longGest = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longGest:)];
     [self.waterCollectionView addGestureRecognizer:longGest];
-    
-    _mediaAnimationDelegate = [[GXMediaAnimationDelegate alloc] init];
 }
 
 - (void)longGest:(UILongPressGestureRecognizer *)gest {
@@ -102,11 +97,11 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
     if (!_imageArr) {
         _imageArr = [NSMutableArray array];
         NSMutableArray *array = [NSMutableArray array];
-        for(int i = 1; i <= 100; i++) {
+        for(int i = 1; i < 100; i++) {
             [array addObject:[NSString stringWithFormat:@"%d.jpeg", i%13]];
         }
-        NSMutableArray *array2 = [array mutableCopy];
         [_imageArr addObject:array];
+        NSMutableArray *array2 = [array mutableCopy];
         [_imageArr addObject:array2];
     }
     return _imageArr;
@@ -167,42 +162,7 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *selectImageName = [self.imageArr[indexPath.section] objectAtIndex:indexPath.row];
-    UIImage *selectImage = [UIImage imageNamed:selectImageName];
-    
-    [self.mediaAnimationDelegate configureTransition:self collectionView:self.waterCollectionView
-                                 transitionIndexPath:indexPath transitionImage:selectImage];
-    self.mediaAnimationDelegate.isNavigationPush = NO;
-    NSInteger index = 0;
-    NSMutableArray<GXMediaBrowserModel*> *modelArray = [NSMutableArray array];
-    NSInteger sectionCount = self.imageArr.count;
-    for (NSInteger i = 0; i < sectionCount; i ++) {
-        NSMutableArray *sectionArray = self.imageArr[i];
-        NSInteger rowCount = sectionArray.count;
-        for (NSInteger j = 0; j < rowCount; j ++) {
-            if (i == indexPath.section && j == indexPath.row) {
-                index = modelArray.count;
-            }
-            NSString *imageName = sectionArray[j];
-            UIImage *image = [UIImage imageNamed:imageName];
-            GXMediaBrowserModel *model = [GXMediaBrowserModel modelAnyImageObjWith:image];
-            model.indexPath = [NSIndexPath indexPathForItem:j inSection:i];
-            [modelArray addObject:model];
-        }
-    }
-    GXMediaBrowser *browser = [[GXMediaBrowser alloc] initWithImagePhotos:modelArray];
-    browser.delegate = self;
-    browser.currentPage = index;
-    
-    /*** 带不带UINavigationController都行 ****/
-    //    browser.transitioningDelegate = self.mediaAnimationDelegate;
-    //    browser.modalPresentationStyle = UIModalPresentationCustom;
-    //    [self presentViewController:browser animated:YES completion:nil];
-    
-    UINavigationController *navigationC = [[UINavigationController alloc] initWithRootViewController:browser];
-    navigationC.transitioningDelegate = self.mediaAnimationDelegate;
-    navigationC.modalPresentationStyle = UIModalPresentationCustom;
-    [self presentViewController:navigationC animated:YES completion:nil];
+    NSLog(@"didSelectItemAtIndexPath:%@", indexPath);
 }
 
 #pragma mark - GXWaterCollectionViewLayoutDelegate
@@ -231,26 +191,6 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - GXMediaBrowserDelegate
-
-// UICollectionCell的indexPath
-- (NSIndexPath*)indexPathWithMediaBrowser:(GXMediaBrowser*)mediaBrowser {
-    GXMediaBrowserModel *model = [mediaBrowser currentMediaModel];
-    return model.indexPath;
-}
-// 获取退出的CGRect
-- (CGRect)rectBackCellWithMediaBrowser:(GXMediaBrowser*)mediaBrowser {
-    GXMediaBrowserModel *model = [mediaBrowser currentMediaModel];
-    CGRect showRect = CGRectMake(self.view.width/2, self.view.height/2, 0, 0);
-    GXWaterCVCell *cell = (GXWaterCVCell*)[self.waterCollectionView cellForItemAtIndexPath:model.indexPath];
-    if (cell) {
-        UIWindow *window = [UIApplication sharedApplication].windows[0];
-        showRect = [cell convertRect:cell.imageView.frame toView:window];
-    }
-    
-    return showRect;
 }
 
 @end
