@@ -16,6 +16,26 @@
 		33F32FCE202FD80E00AF14A9 /* GXWaterSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F32FCD202FD80E00AF14A9 /* GXWaterSampleTests.m */; };
 		33F32FD9202FD80E00AF14A9 /* GXWaterSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F32FD8202FD80E00AF14A9 /* GXWaterSampleUITests.m */; };
 		33F32FE9202FD84B00AF14A9 /* GXWaterCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F32FE8202FD84B00AF14A9 /* GXWaterCollectionViewLayout.m */; };
+		33F33004202FD8C100AF14A9 /* GXFooterCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F32FEC202FD8C100AF14A9 /* GXFooterCRView.m */; };
+		33F33005202FD8C100AF14A9 /* GXFooterCRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FED202FD8C100AF14A9 /* GXFooterCRView.xib */; };
+		33F33006202FD8C100AF14A9 /* GXHeaderCRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F32FEF202FD8C100AF14A9 /* GXHeaderCRView.m */; };
+		33F33007202FD8C100AF14A9 /* GXHeaderCRView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FF0202FD8C100AF14A9 /* GXHeaderCRView.xib */; };
+		33F33008202FD8C100AF14A9 /* GXWaterCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F32FF2202FD8C100AF14A9 /* GXWaterCVCell.m */; };
+		33F33009202FD8C100AF14A9 /* GXWaterCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FF3202FD8C100AF14A9 /* GXWaterCVCell.xib */; };
+		33F3300A202FD8C100AF14A9 /* GXWaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F32FF5202FD8C100AF14A9 /* GXWaterViewController.m */; };
+		33F3300B202FD8C100AF14A9 /* 0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FF7202FD8C100AF14A9 /* 0.jpeg */; };
+		33F3300C202FD8C100AF14A9 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FF8202FD8C100AF14A9 /* 1.jpeg */; };
+		33F3300D202FD8C100AF14A9 /* 10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FF9202FD8C100AF14A9 /* 10.jpeg */; };
+		33F3300E202FD8C100AF14A9 /* 11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FFA202FD8C100AF14A9 /* 11.jpeg */; };
+		33F3300F202FD8C100AF14A9 /* 12.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FFB202FD8C100AF14A9 /* 12.jpeg */; };
+		33F33010202FD8C100AF14A9 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FFC202FD8C100AF14A9 /* 2.jpeg */; };
+		33F33011202FD8C100AF14A9 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FFD202FD8C100AF14A9 /* 3.jpeg */; };
+		33F33012202FD8C100AF14A9 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FFE202FD8C100AF14A9 /* 4.jpeg */; };
+		33F33013202FD8C100AF14A9 /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F32FFF202FD8C100AF14A9 /* 5.jpeg */; };
+		33F33014202FD8C100AF14A9 /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F33000202FD8C100AF14A9 /* 6.jpeg */; };
+		33F33015202FD8C100AF14A9 /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F33001202FD8C100AF14A9 /* 7.jpeg */; };
+		33F33016202FD8C100AF14A9 /* 8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F33002202FD8C100AF14A9 /* 8.jpeg */; };
+		33F33017202FD8C100AF14A9 /* 9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33F33003202FD8C100AF14A9 /* 9.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +74,30 @@
 		33F32FDA202FD80E00AF14A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33F32FE7202FD84B00AF14A9 /* GXWaterCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXWaterCollectionViewLayout.h; sourceTree = "<group>"; };
 		33F32FE8202FD84B00AF14A9 /* GXWaterCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXWaterCollectionViewLayout.m; sourceTree = "<group>"; };
+		33F32FEB202FD8C100AF14A9 /* GXFooterCRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXFooterCRView.h; sourceTree = "<group>"; };
+		33F32FEC202FD8C100AF14A9 /* GXFooterCRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFooterCRView.m; sourceTree = "<group>"; };
+		33F32FED202FD8C100AF14A9 /* GXFooterCRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXFooterCRView.xib; sourceTree = "<group>"; };
+		33F32FEE202FD8C100AF14A9 /* GXHeaderCRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHeaderCRView.h; sourceTree = "<group>"; };
+		33F32FEF202FD8C100AF14A9 /* GXHeaderCRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXHeaderCRView.m; sourceTree = "<group>"; };
+		33F32FF0202FD8C100AF14A9 /* GXHeaderCRView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXHeaderCRView.xib; sourceTree = "<group>"; };
+		33F32FF1202FD8C100AF14A9 /* GXWaterCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXWaterCVCell.h; sourceTree = "<group>"; };
+		33F32FF2202FD8C100AF14A9 /* GXWaterCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXWaterCVCell.m; sourceTree = "<group>"; };
+		33F32FF3202FD8C100AF14A9 /* GXWaterCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXWaterCVCell.xib; sourceTree = "<group>"; };
+		33F32FF4202FD8C100AF14A9 /* GXWaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXWaterViewController.h; sourceTree = "<group>"; };
+		33F32FF5202FD8C100AF14A9 /* GXWaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXWaterViewController.m; sourceTree = "<group>"; };
+		33F32FF7202FD8C100AF14A9 /* 0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpeg; sourceTree = "<group>"; };
+		33F32FF8202FD8C100AF14A9 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		33F32FF9202FD8C100AF14A9 /* 10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpeg; sourceTree = "<group>"; };
+		33F32FFA202FD8C100AF14A9 /* 11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpeg; sourceTree = "<group>"; };
+		33F32FFB202FD8C100AF14A9 /* 12.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpeg; sourceTree = "<group>"; };
+		33F32FFC202FD8C100AF14A9 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		33F32FFD202FD8C100AF14A9 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		33F32FFE202FD8C100AF14A9 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
+		33F32FFF202FD8C100AF14A9 /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
+		33F33000202FD8C100AF14A9 /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpeg; sourceTree = "<group>"; };
+		33F33001202FD8C100AF14A9 /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpeg; sourceTree = "<group>"; };
+		33F33002202FD8C100AF14A9 /* 8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpeg; sourceTree = "<group>"; };
+		33F33003202FD8C100AF14A9 /* 9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				33F32FE6202FD84B00AF14A9 /* GXWaterCollectionViewLayout */,
+				33F32FEA202FD8C100AF14A9 /* Water */,
 				33F32FB4202FD80E00AF14A9 /* AppDelegate.h */,
 				33F32FB5202FD80E00AF14A9 /* AppDelegate.m */,
 				33F32FB7202FD80E00AF14A9 /* ViewController.h */,
@@ -144,6 +189,45 @@
 			);
 			name = GXWaterCollectionViewLayout;
 			path = ../../GXWaterCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		33F32FEA202FD8C100AF14A9 /* Water */ = {
+			isa = PBXGroup;
+			children = (
+				33F32FEB202FD8C100AF14A9 /* GXFooterCRView.h */,
+				33F32FEC202FD8C100AF14A9 /* GXFooterCRView.m */,
+				33F32FED202FD8C100AF14A9 /* GXFooterCRView.xib */,
+				33F32FEE202FD8C100AF14A9 /* GXHeaderCRView.h */,
+				33F32FEF202FD8C100AF14A9 /* GXHeaderCRView.m */,
+				33F32FF0202FD8C100AF14A9 /* GXHeaderCRView.xib */,
+				33F32FF1202FD8C100AF14A9 /* GXWaterCVCell.h */,
+				33F32FF2202FD8C100AF14A9 /* GXWaterCVCell.m */,
+				33F32FF3202FD8C100AF14A9 /* GXWaterCVCell.xib */,
+				33F32FF4202FD8C100AF14A9 /* GXWaterViewController.h */,
+				33F32FF5202FD8C100AF14A9 /* GXWaterViewController.m */,
+				33F32FF6202FD8C100AF14A9 /* image */,
+			);
+			path = Water;
+			sourceTree = "<group>";
+		};
+		33F32FF6202FD8C100AF14A9 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				33F32FF7202FD8C100AF14A9 /* 0.jpeg */,
+				33F32FF8202FD8C100AF14A9 /* 1.jpeg */,
+				33F32FF9202FD8C100AF14A9 /* 10.jpeg */,
+				33F32FFA202FD8C100AF14A9 /* 11.jpeg */,
+				33F32FFB202FD8C100AF14A9 /* 12.jpeg */,
+				33F32FFC202FD8C100AF14A9 /* 2.jpeg */,
+				33F32FFD202FD8C100AF14A9 /* 3.jpeg */,
+				33F32FFE202FD8C100AF14A9 /* 4.jpeg */,
+				33F32FFF202FD8C100AF14A9 /* 5.jpeg */,
+				33F33000202FD8C100AF14A9 /* 6.jpeg */,
+				33F33001202FD8C100AF14A9 /* 7.jpeg */,
+				33F33002202FD8C100AF14A9 /* 8.jpeg */,
+				33F33003202FD8C100AF14A9 /* 9.jpeg */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +336,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F33014202FD8C100AF14A9 /* 6.jpeg in Resources */,
+				33F33011202FD8C100AF14A9 /* 3.jpeg in Resources */,
 				33F32FC1202FD80E00AF14A9 /* LaunchScreen.storyboard in Resources */,
+				33F3300B202FD8C100AF14A9 /* 0.jpeg in Resources */,
+				33F33017202FD8C100AF14A9 /* 9.jpeg in Resources */,
+				33F33009202FD8C100AF14A9 /* GXWaterCVCell.xib in Resources */,
+				33F33012202FD8C100AF14A9 /* 4.jpeg in Resources */,
+				33F33013202FD8C100AF14A9 /* 5.jpeg in Resources */,
+				33F3300F202FD8C100AF14A9 /* 12.jpeg in Resources */,
+				33F33015202FD8C100AF14A9 /* 7.jpeg in Resources */,
+				33F3300D202FD8C100AF14A9 /* 10.jpeg in Resources */,
+				33F3300C202FD8C100AF14A9 /* 1.jpeg in Resources */,
+				33F33005202FD8C100AF14A9 /* GXFooterCRView.xib in Resources */,
+				33F33007202FD8C100AF14A9 /* GXHeaderCRView.xib in Resources */,
+				33F33010202FD8C100AF14A9 /* 2.jpeg in Resources */,
+				33F33016202FD8C100AF14A9 /* 8.jpeg in Resources */,
 				33F32FBE202FD80E00AF14A9 /* Assets.xcassets in Resources */,
 				33F32FBC202FD80E00AF14A9 /* Main.storyboard in Resources */,
+				33F3300E202FD8C100AF14A9 /* 11.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +380,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F32FB9202FD80E00AF14A9 /* ViewController.m in Sources */,
+				33F33006202FD8C100AF14A9 /* GXHeaderCRView.m in Sources */,
 				33F32FC4202FD80E00AF14A9 /* main.m in Sources */,
+				33F3300A202FD8C100AF14A9 /* GXWaterViewController.m in Sources */,
+				33F33008202FD8C100AF14A9 /* GXWaterCVCell.m in Sources */,
 				33F32FB6202FD80E00AF14A9 /* AppDelegate.m in Sources */,
 				33F32FE9202FD84B00AF14A9 /* GXWaterCollectionViewLayout.m in Sources */,
+				33F33004202FD8C100AF14A9 /* GXFooterCRView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L54KZN9KMH;
 				INFOPLIST_FILE = GXWaterSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.protruly.dev.GXWaterSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,7 +567,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L54KZN9KMH;
 				INFOPLIST_FILE = GXWaterSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.protruly.dev.GXWaterSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
