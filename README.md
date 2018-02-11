@@ -4,20 +4,20 @@
 
 ###Usage in you Podfile:
 
-```objectivec
+```Objective-C
 pod 'GXWaterCollectionViewLayout'
 
 ```
 
 ###可以设置纵横方向
 
-```java
+```Objective-C
 @property (nonatomic, assign) UICollectionViewScrollDirection scrollDirection;  //滚动方向
 ```
 
 ###可以设置的其它参数
 
-```java
+```Objective-C
 @property (nonatomic, assign) NSInteger    numberOfColumns;   //瀑布流横排数
 @property (nonatomic, assign) CGFloat      lineSpacing;       //纵向间距
 @property (nonatomic, assign) CGFloat      interitemSpacing;  //横向间距
@@ -28,7 +28,7 @@ pod 'GXWaterCollectionViewLayout'
 
 ###实例应用代码
 
-```java
+```Objective-C
 // 初始化瀑布流布局
 self.waterLayout = [[GXWaterCollectionViewLayout alloc] init];
 self.waterLayout.numberOfColumns = 4;
@@ -59,3 +59,4 @@ self.waterCollectionView.dataSource = self;
 ###License
 --
 MIT
+
