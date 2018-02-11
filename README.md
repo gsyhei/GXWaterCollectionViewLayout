@@ -2,12 +2,12 @@
 --
 一个好用的瀑布流布局，可以设置纵横方向和排列数等。
 
-#Requirements
+Requirements
 --
 - iOS 7.0 or later
 - Xcode 7.3 or later
 
-###Usage in you Podfile:
+Usage in you Podfile:
 --
 
 ```
@@ -15,14 +15,14 @@ pod 'GXWaterCollectionViewLayout'
 
 ```
 
-###可以设置纵横方向
+可以设置纵横方向
 --
 
 ```objc
 @property (nonatomic, assign) UICollectionViewScrollDirection scrollDirection;  //滚动方向
 ```
 
-###可以设置的其它参数
+可以设置的其它参数
 --
 
 ```objc
@@ -34,7 +34,7 @@ pod 'GXWaterCollectionViewLayout'
 @property (nonatomic, assign) UIEdgeInsets sectionInset;      //分类inset
 ```
 
-###实例应用代码
+实例应用代码
 --
 
 ```objc
@@ -57,17 +57,17 @@ self.waterCollectionView.dataSource = self;
 [self.view addSubview:self.waterCollectionView];
 ```
 
-###方向UICollectionViewScrollDirectionVertical效果
+方向UICollectionViewScrollDirectionVertical效果
 --
 
 ![](/IMG_Vertical.PNG '描述')
 
-###方向UICollectionViewScrollDirectionHorizontal效果
+方向UICollectionViewScrollDirectionHorizontal效果
 --
 
 ![](/IMG_Horizontal.PNG '描述')
 
-###License
+License
 --
 MIT
 
