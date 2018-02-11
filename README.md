@@ -5,7 +5,7 @@
 Requirements
 --
 - iOS 7.0 or later
-- Xcode 7.3 or later
+- Xcode 8.0 or later
 
 Usage in you Podfile:
 --
