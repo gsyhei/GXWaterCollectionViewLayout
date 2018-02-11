@@ -31,15 +31,16 @@ static NSString* GXSectionCellID   = @"GXSectionCellID";
     self.title = @"瀑布流";
     
     self.waterLayout = [[GXWaterCollectionViewLayout alloc] init];
-    self.waterLayout.numberOfColumns = 4;
     self.waterLayout.lineSpacing = 10.0;
     self.waterLayout.interitemSpacing = 10.0;
     self.waterLayout.sectionInset = UIEdgeInsetsMake(20, 20, 20, 20);
     self.waterLayout.scrollDirection = self.scrollDirection;//UICollectionViewScrollDirectionHorizontal;
     if (self.waterLayout.scrollDirection == UICollectionViewScrollDirectionVertical) {
+        self.waterLayout.numberOfColumns = 4;
         self.waterLayout.headerSize = CGSizeMake(self.view.bounds.size.width, 40);
         self.waterLayout.footerSize = CGSizeMake(self.view.bounds.size.width, 40);
     } else {
+        self.waterLayout.numberOfColumns = 5;
         self.waterLayout.headerSize = CGSizeMake(40, self.view.bounds.size.height);
         self.waterLayout.footerSize = CGSizeMake(40, self.view.bounds.size.height);
     }
