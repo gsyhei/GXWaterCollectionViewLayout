@@ -4,8 +4,8 @@
 
 #Requirements
 --
-iOS 7.0 or later
-Xcode 7.3 or later
+- iOS 7.0 or later
+- Xcode 7.3 or later
 
 ###Usage in you Podfile:
 --
